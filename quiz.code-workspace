@@ -1,0 +1,24 @@
+{
+  "folders": [
+    {
+      "name": "🌱 root",
+      "path": "."
+    }
+  ],
+  "settings": {
+    "terminal.integrated.cwd": "./"
+  },
+  "extensions": {
+    "recommendations": [
+      "editorconfig.editorconfig",
+      "dbaeumer.vscode-eslint",
+      "eamodio.gitlens",
+      "ms-vsliveshare.vsliveshare-pack",
+      "folke.vscode-monorepo-workspace",
+      "bradlc.vscode-tailwindcss",
+      "Tobermory.es6-string-html",
+      "rubbersheep.gi",
+      "stylelint.vscode-stylelint"
+    ]
+  }
+}
