@@ -21,15 +21,11 @@ Dostarczona została także lista funkcjonalności.
    - losowane są 3 odpowiedzi z zapytania do StarWars API. Dla trybu "People" będzie to: https://swapi.co/api/people (jedna brana jest z wcześniej wylosowanego, musi być poprawna)
 7. Po ukończeniu czasu wynik gracza zapisywany jest w rankingu dla danej przeglądarki (LocalStorage) i pokazywany jest ranking 3 najlepszych wyników.
 
-Waszym zadaniem będzie zaimplementować aplikację, aby działała wg wymagań klienta, a także przygotować i wykonać
-wersję responsywną aplikacji (dostosowaną do wyświetlania na Tabletach i Telefonach — możecie przygotować najpierw projekt interfejsu, lub od razu przejść do implementacji).
+Zadaniem będzie zaimplementować aplikację, aby działała wg wymagań klienta, a także przygotować i wykonać
+wersję responsywną aplikacji (dostosowaną do wyświetlania na Tabletach i Telefonach — przygotować najpierw projekt interfejsu, lub od razu przejść do implementacji).
 W celu zaprezentowania działania aplikacja musi być możliwa do odwiedzenia w internecie.
 Klient nie chce ponosić za to żadnych dodatkowych kosztów, dlatego należy wykorzystać jedną z usług oferujących darmowe
 uruchomienie takiej aplikacji (np. GitHub Pages).
-Klient wymaga także, aby aplikacja nie tylko działała, ale była odpowiednio pokryta testami.
-Naprawdę macie szczęście co do klienta! Wielu uważa testy za niepotrzebne i jedynie stratę pieniędzy.
-A co znaczy „odpowiednio pokryta”? To już należy właśnie ustalić z samym Klientem :)
-Wszelkie nieścisłości w wymaganiach powinien wyjaśniać Product Owner wraz z Klientem.
 
 ## Możliwe usprawnienia i dodatkowe funkcjonalności:
 
