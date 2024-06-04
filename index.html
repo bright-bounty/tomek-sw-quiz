@@ -4,10 +4,85 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + TS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Star Wars Quiz</title>
   </head>
   <body>
-    <div id="app"></div>
+    <main class="bg-[url('/galaxy.jpg')] bg-center bg-repeat bg-cover bg-fixed">
+      <div class="container">
+        <div class="flex w-full min-h-screen">
+          <div>
+            <div class="relative mt-[3.2rem] ml-[1.7rem]">
+              <img
+                class="custom-shadow max-w-[31.5rem] max-h-[15.5rem]"
+                src="/logo.png"
+                alt="Star Wars logo"
+              />
+            </div>
+            <div class="relative mt-[3.2rem] left-[4.2rem]">
+              <img
+                class="custom-shadow w-[25.6rem] h-[34rem] rounded-2xl object-cover"
+                src="/randomImg.jpg"
+                alt="Random generate image"
+              />
+            </div>
+            <button
+              class="relative mt-[3.2rem] ml-[4.3rem] w-[25.5rem] h-[6.2rem] bg-white rounded-2xl box-shadow setting-btn text-center"
+            >
+              Settings
+            </button>
+          </div>
+          <div class="ml-[5rem] mt-[4.8rem] w-[75rem]">
+            <div
+              class="bg-white h-[11.3rem] rounded-2xl flex items-center text-[2.65rem] font-[550] custom-shadow"
+            >
+              <p class="ml-[8.4rem] mode-selected relative">People</p>
+              <p class="ml-[11.2rem] text-black/[0.4]">Vehicles</p>
+              <p class="ml-[11.2rem] text-black/[0.4]">Starships</p>
+            </div>
+            <div
+              class="bg-white h-[6.2rem] mt-[5.9rem] justify-center items-center text-[2.65rem] flex font-[500] rounded-2xl custom-sh"
+            >
+              <p>MODE: Who is this character?</p>
+            </div>
+            <div
+              class="bg-white h-[21.8rem] mt-[2.4rem] flex flex-col rounded-2xl"
+            >
+              <div class="flex mt-[0.9rem] ml-[24.7rem]">
+                <img class="" src="mode.svg" alt="" />
+                <p class="text-[2.65rem] ml-[2rem]">Mode Rules</p>
+              </div>
+              <p
+                class="text-[2rem] mt-[0.8rem] mx-[3rem] font-[500] leading-normal"
+              >
+                You have one minute (1m) to answer as many questions as
+                possible. During the game on each question you need to select
+                who from Star Wars is showed on the left (Jar Jar Binks right
+                now) from available options.
+              </p>
+            </div>
+            <div class="mt-[2.6rem] flex justify-between">
+              <button
+                class="w-[35.8rem] h-[6.2rem] bg-white rounded-2xl flex items-center"
+              >
+                <img class="ml-[3.5rem]" src="/hof.svg" alt="" />
+                <p class="ml-[3.2rem] text-[2.65rem]">Hall of fame</p>
+              </button>
+              <button
+                class="w-[37.4rem] h-[6.2rem] bg-red-600 rounded-2xl text-white custom-shadow uppercase text-[2.65rem]"
+              >
+                PLAY THE GAME
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
