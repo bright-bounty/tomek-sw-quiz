@@ -29,5 +29,10 @@
     "typescript": "^5.2.2",
     "typescript-eslint": "^7.11.0",
     "vite": "^5.2.0"
-  }
+  },
+  "description": "Jedna ze znanych marek płatków śniadaniowych prowadzi wieloletnią współpracę z wytwórnią filmów Disney, do której od niedawna należą także Gwiezdne Wojny. W ramach kolejnej akcji promocyjnej wasz zespół został poproszony o przygotowanie Proof of Concept aplikacji związanej ze Star Wars. Po wstępnym rozpoznaniu i analizie biznesowej podjęto decyzję o przygotowaniu quizu sprawdzającego znajomość uniwersum Gwiezdnych Wojen. Ma to być aplikacja webowa działająca w przeglądarce, bez potrzeby instalacji.",
+  "main": "postcss.config.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
