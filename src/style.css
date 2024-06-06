@@ -1,3 +1,136 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 2rem;
+}
+
+.main-shadow {
+  box-shadow:
+    0px 4px 4px rgba(0, 0, 0, 0.25),
+    4px 4px 40px rgba(255, 0, 0, 0.9);
+}
+
+th {
+  text-align: start;
+  font-size: 24px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+td {
+  padding-right: 48px;
+  padding-top: 16px;
+}
+
+.good {
+  font-weight: 600;
+  font-size: 24px;
+  color: rgba(87, 181, 13, 0.6);
+}
+
+.bad {
+  font-weight: 600;
+  font-size: 24px;
+
+  color: rgba(255, 0, 0, 0.6);
+}
+
+.answer {
+  font-weight: 500;
+  font-size: 24px;
+
+  color: #000000;
+}
+
+.td-img {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
+    drop-shadow(4px 4px 40px rgba(255, 0, 0, 0.9));
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+button {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
+    drop-shadow(4px 4px 40px rgba(255, 0, 0, 0.9));
+}
+
+@media (max-width: 1200px) {
+  th {
+    font-size: 20px;
+  }
+
+  td {
+    padding-right: 32px;
+    padding-top: 12px;
+  }
+
+  .good {
+    font-size: 20px;
+  }
+
+  .bad {
+    font-size: 20px;
+  }
+
+  .answer {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 1024px) {
+  th {
+    font-size: 16px;
+  }
+
+  td {
+    padding-right: 24px;
+    padding-top: 8px;
+  }
+
+  .good {
+    font-size: 16px;
+  }
+
+  .bad {
+    font-size: 16px;
+  }
+
+  .answer {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  th {
+    font-size: 14px;
+  }
+
+  td {
+    padding-right: 24px;
+    padding-top: 8px;
+  }
+
+  .good {
+    font-size: 14px;
+  }
+
+  .bad {
+    font-size: 14px;
+  }
+
+  .answer {
+    font-size: 14px;
+  }
+}

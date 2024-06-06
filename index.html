@@ -4,10 +4,107 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + TS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Game Over Modal</title>
   </head>
   <body>
-    <div id="app"></div>
+    <div class="fixed inset-0">
+      <div class="absolute inset-0 z-10"></div>
+      <div
+        class="absolute inset-0 z-20 flex justify-center items-center my-4px"
+      >
+        <div class="container">
+          <div
+            class="w-full p-8 flex flex-col items-center rounded-2xl main-shadow md:p-12"
+          >
+            <p
+              class="text-2xl xl:text-[42px] font-semibold uppercase lg:text-4xl md:text-3xl"
+            >
+              game over
+            </p>
+            <p
+              class="text-base xl:mt-4 xl:text-[28px] xl:leading-8 lg:text-2xl md:mt-3 md:text-xl"
+            >
+              The force is strong in you young Padawan! During 1 minute you have
+              answered 10 / 23 questions. And Computer quessed 5 / 23.
+            </p>
+            <div
+              class="flex flex-col items-center md:flex-row xl:gap-x-12 xl:mt-8 md:items-start w-full md:gap-x-10 md:mt-6"
+            >
+              <img
+                src="./joda.svg"
+                alt=""
+                class="max-w-48 xl:max-w-64 lg:max-w-60 md:max-w-52"
+              />
+              <div class="detailed">
+                <p
+                  class="mt-4 md:mt-0 xl:text-2xl font-semibold lg:text-xl md:text-lg"
+                >
+                  Detailed answers
+                </p>
+                <table class="score w-full xl:mt-4 mt-3">
+                  <tr>
+                    <th></th>
+                    <th>You</th>
+                    <th>Computer</th>
+                    <th>Answer</th>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img
+                        class="max-w-8 xl:max-w-16 rounded-2xl td-img lg:max-w-14 md:max-w-12"
+                        src="/vader.jpeg"
+                        alt=""
+                      />
+                    </td>
+                    <td class="good">Darth Vader</td>
+                    <td class="bad">Darth Father</td>
+                    <td class="answer">Darth Vader</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img
+                        class="max-w-8 xl:max-w-16 rounded-2xl td-img lg:max-w-14 md:max-w-12"
+                        src="/jar.jpeg"
+                        alt=""
+                      />
+                    </td>
+                    <td class="good">Jar Jar Binks</td>
+                    <td class="good">Jar Jar Binks</td>
+                    <td class="answer">Darth Vader</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            <div
+              class="flex flex-col items-center md:flex-row-reverse w-full mt-4 md:mt-0"
+            >
+              <label
+                for="name"
+                class="text-black xl:pl-6 lg:text-2xl lg:pl-5 md:text-lg md:pl-4"
+                >Please fill your name in order to receive eternal glory in
+                whole Galaxy!</label
+              >
+              <input
+                type="text"
+                class="bg-white rounded-lg font-normal max-w-[80%] text-xl px-1 border-2 mt-4 md:mt-0 xl:text-4xl xl:px-4 text-black border-[rgb(196,196,196)] lg:max-w-[50%] md:border-4 border-solid lg:text-3xl lg:px-3 md:text-2xl md:px-2 md:max-w-[40%] md:py-2"
+              />
+            </div>
+            <button
+              class="uppercase mt-4 p-2 lg:max-w-[700px] text-base xl:py-4 xl:mt-16 rounded-2xl text-white lg:text-4xl bg-[rgb(255,0,0)] lg:py-3 lg:mt-14 md:text-3xl md:mt-12 md:max-w-[520px]"
+            >
+              MAY THE FORCE BE WITH YOU!
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
