@@ -42,6 +42,7 @@ body {
 }
 
 .mode-selected {
+  color: black;
   position: relative;
 }
 

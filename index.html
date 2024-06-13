@@ -27,15 +27,24 @@
               />
             </div>
             <div
-              class="flex flex-col gap-6 py-8 justify-around items-center max-w-sm w-full rounded-2xl text-2xl 2xl:py-16 bg-white xl:text-[42px] font-semibold second-filter sm:py-12 md:text-4xl sm:flex-row sm:gap-0 sm:max-w-[1200px]"
+              class="flex flex-col gap-6 py-8 justify-around items-center max-w-sm w-full rounded-2xl text-2xl 2xl:py-16 bg-white xl:text-[42px] font-semibold second-filter sm:py-12 md:text-4xl sm:flex-row sm:gap-0 sm:max-w-[1200px] navigation"
             >
               <button
-                class="mode-selected text-black lg:after:h-2 lg:after:top-12"
+                class="mode-selected text-black/[.4] lg:after:h-2 lg:after:top-12 nav-button"
+                data-x="people"
               >
                 People
               </button>
-              <button class="text-black/[.4]">Vehicles</button>
-              <button class="text-black/[.4]">Starships</button>
+              <button
+                class="text-black/[.4] lg:after:h-2 lg:after:top-12lg:after:h-2 lg:after:top-12 nav-button"
+              >
+                Vehicles
+              </button>
+              <button
+                class="text-black/[.4] lg:after:h-2 lg:after:top-12 nav-button"
+              >
+                Starships
+              </button>
             </div>
           </div>
           <div class="flex lg:flex-row 2xl:gap-20 lg:gap-16 flex-col">
@@ -63,7 +72,7 @@
                 class="flex justify-center bg-white rounded-2xl second-shadow"
               >
                 <p
-                  class="flex text-center text-xl font-semibold text-black 2xl:p-7 lg:p-6 xl:text-[42px] lg:text-4xl p-5 sm:text-3xl"
+                  class="flex text-center text-xl font-semibold text-black 2xl:p-7 lg:p-6 xl:text-[42px] lg:text-4xl p-5 sm:text-3xl mode"
                 >
                   MODE: Who is this character?
                 </p>
