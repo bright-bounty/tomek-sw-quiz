@@ -1,30 +1,14 @@
 import { Navigation } from "./entites/navigation";
 import { Onboarding } from "./entites/onboarding";
 
-const navButtons: HTMLButtonElement[] = Array.from(
-  document.querySelectorAll<HTMLButtonElement>(".nav-button"),
-);
-
 class App {
-  btn: HTMLButtonElement;
-  constructor(btn: HTMLButtonElement) {
-    this.btn = btn;
-  }
+  private nav: Navigation;
+  private onboarding;
+  public mode: (typeof this.nav)["modes"][number] = "people";
 
-  navigation() {
-    const nav = new Navigation(this.btn);
-    nav.chooseMode();
-  }
-  onboarding() {
-    const onboarding = new Onboarding(this.btn.innerText);
-    onboarding.changeMode();
+  constructor() {
+    this.nav = new Navigation(this.mode);
+    this.onboarding = new Onboarding(this.mode);
   }
 }
-
-navButtons.forEach((btn) => {
-  btn.addEventListener("click", () => {
-    const app = new App(btn);
-    app.navigation();
-    app.onboarding();
-  });
-});
+new App();
