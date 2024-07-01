@@ -1,13 +1,12 @@
 export class Counter {
-  count_value: number = 120;
+  count_value: number = 120; // ustawienie wartości początkowej
   constructor() {
-    this.count_value = this.count_value;
     console.log(`Counter game inicializated`);
   }
 
   renderCounter() {
-    document.querySelector<HTMLDivElement>("#app")!.innerHTML += `
-<div class="flex flex-col items-center " id="timer">
+    document.querySelector<HTMLDivElement>("#timer")!.innerHTML += `
+<div class="flex flex-col items-center ">
   <div class=" flex items-center w-full">
     <img src="/lightsaber.svg" alt="lightsaber" class="w-72 h-12" />
     <div class="w-full w-max-full h-full relative -ml-5">
@@ -28,14 +27,28 @@ export class Counter {
   }
 
   startCount(element: HTMLElement) {
+    //wartości początkowe timera
     let sec = this.count_value % 60;
     let min = (this.count_value - sec) / 60;
+    let current_value = this.count_value;
     element.innerText = `Time left: ${min}min ${sec}s`;
+
+    //counter
     const counter = setInterval(() => {
-      this.count_value === 0 ? clearInterval(counter) : this.count_value--;
-      sec = this.count_value % 60;
-      min = (this.count_value - sec) / 60;
-      element.innerText = `Time left: ${min}min ${sec}s`;
+      if (current_value === 1) {
+        //koniec odliczania: reset timera, usunięcie miecza świetlnego,  zablokowanie ponownego włączenia podczas odliczania.
+        // po skończeniu czasu wyświetlić modalWindow
+        clearInterval(counter);
+        document.querySelector<HTMLDivElement>("#timer")!.innerHTML = "";
+        document.querySelector<HTMLButtonElement>(
+          "#play",
+        )!.style.pointerEvents = "auto";
+      } else {
+        current_value--;
+        sec = current_value % 60;
+        min = (current_value - sec) / 60;
+        element.innerText = `Time left: ${min}min ${sec}s`;
+      }
     }, 1000);
   }
 }

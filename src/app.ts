@@ -24,4 +24,7 @@ document
   .querySelector<HTMLButtonElement>("#play")
   ?.addEventListener("click", () => {
     app.startTimer();
+
+    document.querySelector<HTMLButtonElement>("#play")!.style.pointerEvents =
+      "none";
   });
